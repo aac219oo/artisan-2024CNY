@@ -58,7 +58,7 @@
     letter-spacing: 2px;
     outline: none;
     border: 0;
-    width: 125px;
+    min-width: 125px;
     cursor: pointer;
 }
 
