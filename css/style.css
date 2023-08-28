@@ -34,7 +34,6 @@
     width: 100%;
 }
 
-
 .navDateTool {
     width: 95%;
     margin: 0 auto;
@@ -72,14 +71,13 @@
     margin: 60px auto 20px;
 }
 
-
 .calendar-main {
     display: grid;
     grid-template-columns: repeat(auto-fill, 13%);
     /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
     justify-content: center;
     width: 100%;
-    grid-gap: 15px
+    grid-gap: 15px;
 }
 
 .day {
@@ -128,13 +126,21 @@
 .list-title a {
     display: block;
     padding-bottom: 3px;
-    border-bottom: 2px solid #cacccb;
     color: #585753;
     font-weight: 800;
     letter-spacing: 1px;
     font-size: 1.05rem;
-    transition: ease-in .3s;
+    transition: ease-in 0.3s;
 }
+
+.list-title.show a {
+    border-bottom: 2px solid #cacccb;
+}
+
+.list-title.show a.hideBorder {
+    border-bottom: none;
+}
+
 .list-title a:hover {
     color: #d82b31;
 }
@@ -150,7 +156,6 @@
 .show.sss a {
     border-bottom: 0;
 }
-
 
 /* footer */
 
@@ -281,9 +286,7 @@ footer a:hover {
     display: none;
 } */
 
-
 @media (max-width: 768px) {
-
     .calendar-main {
         grid-template-columns: repeat(auto-fill, 20%);
     }
@@ -293,7 +296,7 @@ footer a:hover {
     }
 
     .list a {
-        font-size: .9rem;
+        font-size: 0.9rem;
     }
 
     /*============== footer ==============*/
@@ -314,9 +317,7 @@ footer a:hover {
     }
 }
 
-@media (max-width:500px) {
-
-
+@media (max-width: 500px) {
     .banner-mobile {
         content: url(../images/手機板.jpg);
     }
@@ -334,7 +335,7 @@ footer a:hover {
     .list {
         padding: 0px 12px 10px;
     }
-        
+
     .noshow {
         display: none;
     }
@@ -380,5 +381,4 @@ footer a:hover {
         content: '';
         margin-right: 6px;
     }
-    
 }

@@ -915,7 +915,25 @@
             //         }
             //     });
             // });
+            $('.btn').click(function () {
+                $('.day').each(function (e) {
+                    // console.log(!$(this).find('.list-title').hasClass('show'), e)
+                    let $this = $(this)
+                    let filterDivHasShow = $this.find('.filterDiv').hasClass('show')
+                    let hideBorder = $this.find('.show').find('a')
+                    if (filterDivHasShow) {
+                        $this.removeClass('noshow')
+                    }
+                    else {
+                        $this.addClass('noshow')
+                    }
 
+                    if (hideBorder.length === 1) {
+                        hideBorder.addClass('hideBorder');
+                    }
+                    $this.find('.show a:last').addClass('hideBorder');
+                })
+            })
         })
     </script>
 </body>
