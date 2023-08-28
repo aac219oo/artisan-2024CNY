@@ -321,6 +321,19 @@ footer a:hover {
         content: url(../images/手機板.jpg);
     }
 
+    .navDateTool {
+        width: 100%;
+    }
+    
+    .buttons {
+        margin: 9px 9px;
+    }
+    
+    .btn {
+        padding: 5px 24px;
+        min-width: 158px;
+    }
+
     .calendar-main {
         display: flex;
         flex-wrap: wrap;
